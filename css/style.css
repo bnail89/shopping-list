@@ -1,0 +1,51 @@
+* {
+  outline: red 1px solid;
+}
+
+body {
+    display: block;
+    background-image: url("https://static.pexels.com/photos/26799/pexels-photo-26799.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: block;
+    margin-top: 0;
+    float: center;
+    padding-top: 100px;
+}
+
+.container h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 90px;
+    text-align: center;
+    -webkit-margin-before:0px;
+    -webkit-margin-after:0px;
+}
+
+.form {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    display: block;
+    padding-top: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#addItem {
+    cursor: pointer;
+}
+
+li {
+    background-color: white;
+    margin-bottom:3px;
+    padding: 2px 5px;
+}
+
+button {
+    margin-left: 40px;
+}
+
+
