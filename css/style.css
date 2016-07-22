@@ -12,7 +12,6 @@ body {
 .container {
     display: block;
     margin-top: 0;
-    float: center;
     padding-top: 100px;
 }
 
@@ -23,6 +22,7 @@ body {
     text-align: center;
     -webkit-margin-before:0px;
     -webkit-margin-after:0px;
+    text-shadow: 2px 2px black;
 }
 
 .form {
@@ -38,14 +38,36 @@ body {
     cursor: pointer;
 }
 
-li {
-    background-color: white;
-    margin-bottom:3px;
-    padding: 2px 5px;
+.scrollBox {
+    padding-top: 40px;
+    display: block;
+    margin: auto;
 }
 
-button {
-    margin-left: 40px;
+.scrollBox ul {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+    display: block;
+    margin-top: 0;
+    text-align: center;
+    margin: auto;
+    -webkit-margin-before:0px;
+    -webkit-margin-after:0px;
+    -webkit-padding-start: 0px;
+}
+
+.scrollBox li {
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#delete {
+    margin-left: 20px;
 }
 
 
