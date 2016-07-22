@@ -9,6 +9,11 @@ $("ul").on("click","input", function(el){
 
 $("ul").on("click", "li", function(){
     $(this).wrap("<strike>");
-    
+});
+
+$("body").on("keydown", function(e) {
+    if (e.which == 13) {
+        $("#addItem").click();
+    }
 });
 
