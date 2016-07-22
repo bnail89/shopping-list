@@ -9,5 +9,6 @@ $("ul").on("click","input", function(el){
 
 $("ul").on("click", "li", function(){
     $(this).wrap("<strike>");
+    
 });
 
