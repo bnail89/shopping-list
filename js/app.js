@@ -1,19 +1,18 @@
-$("#addItem").click(function() {
-    var value = $("#inputName").val() + "<input type='image' id='delete' src='images/trash-can.png' alt='Submit' width='20' height='20'>";
-        $("ul").append("<li>" + value + "</li>");
-});
+$('#input').submit(function(e) {
+    e.preventDefault();
+    var value = $("#inputName").val();
+    $("#inputName").val("");
 
-$("ul").on("click","input", function(el){
+    var itemHTML = "<li><span class='item'>" + value + "</span><input type='image' class='delete' " + 
+    "src='images/trash-can.png' alt='Submit' width='20' height='20'></li>";
+    $("#itemList").append(itemHTML);  
+})
+
+$("#itemList").on("click",".delete", function(el){
     $(this).parent().remove()
 });
 
-$("ul").on("click", "li", function(){
+$("#itemList").on("click", ".item", function(){
     $(this).wrap("<strike>");
-});
-
-$("body").on("keydown", function(e) {
-    if (e.which == 13) {
-        $("#addItem").click();
-    }
 });
 
